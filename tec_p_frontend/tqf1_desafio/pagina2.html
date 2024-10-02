@@ -3,55 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 2</title>
+    <title>Detalhes dos Filmes B</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-image: radial-gradient(circle at 50% -20.71%, #ffffff 0, #373838 50%, #000000 100%);
             margin: 0;
             padding: 20px;
         }
         header {
-            background: #28A745;
+            background: #000000;
             color: #fff;
-            padding: 10px 0;
-            text-align: center;
+            height: 100px; /* Altura ajustada para o header */
+            display: flex;
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
+            padding: 0; /* Remove padding para ajustar à logo */
         }
-        .conteudo {
+        header img {
+            width: 300px; /* Tamanho da logo */
+            height: auto; /* Mantém a proporção */
+            margin-right: 15px; /* Espaçamento entre o logo e o título */
+        }
+        h1 {
+            display: inline-block; /* Para que o título ajuste sua largura */
+            font-size: 2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
             background: #fff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        footer {
+        h2 {
+            font-family: 'Courier Prime', monospace;
             text-align: center;
-            margin-top: 20px;
         }
+        .filme {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #e7f3ff;
+            text-align: center; /* Centraliza o conteúdo */
+        }
+        img {
+            width: 200px; /* Define a largura fixa */
+            height: 300px; /* Define a altura fixa */
+            object-fit: cover; /* Cobre o espaço sem distorcer */
+            border-radius: 5px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            background: #4c5057;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #506da7;
+        }
+        footer {
+        text-align: center; /* Centraliza o texto */
+        margin-top: 25px; /* Adiciona um espaço acima do rodapé */
+        color: white; /* Define a cor do texto como branca */
+    }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Página 2</h1>
+    <img src="imagens/Logo.png" alt="Logo">
 </header>
 
-<div class="conteudo">
-    <h2>Continuando a Leitura</h2>
-    <p>A leitura é um hábito que pode ser cultivado. Você pode <strong>começar</strong> lendo <em>artigos</em>, <u>livros</u> ou até mesmo <u>blogues</u>.</p>
-    <p>Compartilhe suas experiências!</p>
-    <form>
-        <label for="nome">Seu Nome:</label><br>
-        <input type="text" id="nome" name="nome"><br>
-        <label for="comentario">Seu Comentário:</label><br>
-        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br>
-        <input type="submit" value="Enviar">
-    </form>
-    <p>Voltar para a <a href="index.html">Página Inicial</a>.</p>
-    <hr>
+<div class="container">
+    <h2>Filmes B Famosos</h2>
+
+    <div class="filme">
+        <h3>Plan 9 from Outer Space</h3>
+        <img src="imagens/Filme1.jpg" alt="Plan 9 from Outer Space">
+        <p><strong>Ano:</strong> 1959</p>
+        <p><strong>Sinopse:</strong> Um grupo de alienígenas traz de volta os mortos para conquistar a Terra, mas suas tentativas são tão desastradas que se tornam um clássico do cinema cult.</p>
+    </div>
+
+    <div class="filme">
+        <h3>The Room</h3>
+        <img src="imagens/Filme2.jpg" alt="The Room">
+        <p><strong>Ano:</strong> 2003</p>
+        <p><strong>Sinopse:</strong> Este drama romântico gira em torno de um amor traído, mas suas falhas de roteiro e atuação se tornaram tão notáveis que o filme é celebrado como um dos piores de todos os tempos.</p>
+    </div>
+
+    <div class="filme">
+        <h3>Sharknado</h3>
+        <img src="imagens/Filme3.jpg" alt="Sharknado">
+        <p><strong>Ano:</strong> 2013</p>
+        <p><strong>Sinopse:</strong> Um tornado inusitado traz tubarões para as ruas de Los Angeles, obrigando um grupo de heróis improváveis a lutar pela sobrevivência em um dos filmes mais absurdos da história.</p>
+    </div>
+
+    <div class="filme">
+        <h3>Sleepaway Camp</h3>
+        <img src="imagens/Filme4.jpg" alt="Sleepaway Camp">
+        <p><strong>Ano:</strong> 1983</p>
+        <p><strong>Sinopse:</strong> Durante o verão, adolescentes em um acampamento de férias começam a morrer de forma misteriosa. O filme é famoso por sua reviravolta chocante no final.</p>
+    </div>
+
+    <div class="filme">
+        <h3>Birdemic: Shock and Terror</h3>
+        <img src="imagens/Filme5.jpg" alt="Birdemic: Shock and Terror">
+        <p><strong>Ano:</strong> 2010</p>
+        <p><strong>Sinopse:</strong> Um romance romântico se transforma em um pesadelo quando pássaros atacam uma pequena cidade, criando uma crítica ambiental de forma totalmente inesperada.</p>
+    </div>
+
+    <div class="filme">
+        <h3>Manos: The Hands of Fate</h3>
+        <img src="imagens/Filme6.jpg" alt="Manos: The Hands of Fate">
+        <p><strong>Ano:</strong> 1966</p>
+        <p><strong>Sinopse:</strong> Uma família se perde e acaba em um estranho hotel gerido por um culto de seguidores de Torgo, tornando-se uma experiência surreal e bizarra.</p>
+    </div>
+
+    <div class="filme">
+        <h3>Attack of the Killer Tomatoes</h3>
+        <img src="imagens/Filme7.jpg" alt="Attack of the Killer Tomatoes">
+        <p><strong>Ano:</strong> 1978</p>
+        <p><strong>Ano:</strong> Tomates mutantes atacam a civilização, levando a uma luta hilária para salvar o mundo. Um verdadeiro exemplo do humor absurdo dos filmes B.</p>
+    </div>
+
+    <div class="filme">
+        <h3>Miami Connection</h3>
+        <img src="imagens/Filme8.jpg" alt="Miami Connection">
+        <p><strong>Ano:</strong> 1987</p>
+        <p><strong>Sinopse:</strong> Um grupo de músicos de rock, mestres em artes marciais, enfrenta uma gangue de narcotraficantes em Miami, combinando música e ação de forma hilariante.</p>
+    </div>
+
+    <a href="index.html">Voltar para a lista de filmes B</a>
 </div>
 
 <footer>
-    <p>&copy; 2024 - Todos os direitos reservados.</p>
+  © 2024 Todos os direitos reservados.
 </footer>
 
 </body>

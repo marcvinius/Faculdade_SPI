@@ -3,54 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Lista de Filmes B</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-image: radial-gradient(circle at 50% -20.71%, #ffffff 0, #373838 50%, #000000 100%);
             margin: 0;
             padding: 20px;
         }
         header {
-            background: #007BFF;
+            background: #000000;
             color: #fff;
-            padding: 10px 0;
-            text-align: center;
+            height: 100px; /* Altura ajustada para o header */
+            display: flex;
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
+            padding: 0; /* Remove padding para ajustar à logo */
         }
-        .conteudo {
+        header img {
+            width: 300px; /* Tamanho da logo */
+            height: auto; /* Mantém a proporção */
+            margin-right: 15px; /* Espaçamento entre o logo e o título */
+        }
+        h1 {
+            display: inline-block; /* Para que o título ajuste sua largura */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
             background: #fff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        footer {
+        h2 {
+            font-family: 'Courier Prime', monospace;
             text-align: center;
+        }
+        .introducao {
+            text-align: justify;
+            font-family: 'Courier Prime', monospace;
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 15px;
+            border: 2px solid #38496b;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            background: #4c5057;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #506da7;
+        }
+        .formulario {
             margin-top: 20px;
         }
+        .formulario label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .formulario input[type="text"],
+        .formulario textarea {
+            width: calc(100% - 12px);
+            padding: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        th {
+            background: #333;
+            color: #fff;
+        }
+        .filme {
+            background: #e7f3ff;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 5px solid #000000;
+        }
+        footer {
+        text-align: center; /* Centraliza o texto */
+        margin-top: 25px; /* Adiciona um espaço acima do rodapé */
+        color: white; /* Define a cor do texto como branca */
+    }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Bem-vindo à Página Inicial</h1>
+    <img src="imagens/Logo.png" alt="Logo" style="width: 300px; height: auto; margin-right: 15px;">
 </header>
 
-<div class="conteudo">
-    <h2>Tema Livre: A Importância da Leitura</h2>
-    <p><strong>Leitura</strong> é fundamental para o desenvolvimento pessoal e intelectual. É importante <em>ler</em> para adquirir conhecimento.</p>
-    <p>Alguns dos benefícios da leitura incluem:</p>
+<div class="container">
+    <h2>Introdução aos Filmes B</h2>
+    <p class="introducao">Filmes B são produções cinematográficas que geralmente possuem orçamentos baixos e podem ser caracterizados por atuações e efeitos especiais de qualidade inferior. Muitas vezes, eles são vistos como obras de culto, devido à sua singularidade e à sua capacidade de entreter, mesmo que de maneiras inesperadas. Esses filmes frequentemente exploram gêneros como terror, ficção científica e comédia, e conquistaram um espaço especial no coração dos fãs por sua autenticidade e humor involuntário.</p>
+
+    <h2>Filmes B Famosos</h2>
     <ul>
-        <li>Melhoria da <u>concentração</u></li>
-        <li>Expansão do <sup>vocabulário</sup></li>
-        <li>Aumento da capacidade de <strong>análise crítica</strong></li>
+        <li class="filme"><a href="https://www.imdb.com/title/tt0052077/" target="_blank">Plan 9 from Outer Space (1959)</a> - ⭐️ 3.9/10</li>
+        <li class="filme"><a href="https://www.imdb.com/title/tt0368226/" target="_blank">The Room (2003)</a> - ⭐️ 3.6/10</li>
+        <li class="filme"><a href="https://www.imdb.com/title/tt2724064/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_sharkna" target="_blank">Sharknado (2013)</a> - ⭐️ 3.3/10</li>
+        <li class="filme"><a href="https://www.imdb.com/title/tt0086320/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_sleepaw" target="_blank">Sleepaway Camp (1983)</a> - ⭐️ 6.2/10</li>
+        <li class="filme"><a href="https://www.imdb.com/title/tt1316037/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_birdemic" target="_blank">Birdemic: Shock and Terror (2010)</a> - ⭐️ 1.7/10</li>
+        <li class="filme"><a href="https://www.imdb.com/title/tt0060666/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_manos" target="_blank">Manos: The Hands of Fate (1966)</a> - ⭐️ 1.6/10</li>
+        <li class="filme"><a href="https://www.imdb.com/title/tt0080391/?ref_=nv_sr_srsg_1_tt_5_nm_2_in_0_q_attack%2520of%2520the%2520ki" target="_blank">Attack of the Killer Tomatoes (1978)</a> - ⭐️ 4.6/10</li>
+        <li class="filme"><a href="https://www.imdb.com/title/tt0092549/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_miami%2520conn" target="_blank">Miami Connection (1987)</a> - ⭐️ 5.6/10</li>
     </ul>
-    <p>Veja como é fácil começar!</p>
-    <p>Para mais informações, visite a <a href="pagina2.html">Página 2</a>.</p>
+
+    <h3><u>Compartilhe seu filme B favorito:</u></h3>
+    <form class="formulario">
+        <label for="filme"><em>Nome do Filme:</em></label>
+        <input type="text" id="filme" name="filme" required>
+        
+        <label for="comentario"><em>Comentário:</em></label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
     <hr>
+
+    <h3>Estatísticas de Filmes</h3>
+    <table>
+        <tr>
+            <th>Filme</th>
+            <th>Ano</th>
+            <th>Classificação</th>
+        </tr>
+        <tr>
+            <td class="filme">Plan 9 from Outer Space</td>
+            <td>1959</td>
+            <td>⭐️⭐️⭐️</td>
+        </tr>
+        <tr>
+            <td class="filme">The Room</td>
+            <td>2003</td>
+            <td>⭐️⭐️⭐️</td>
+        </tr>
+        <tr>
+            <td class="filme">Sharknado</td>
+            <td>2013</td>
+            <td>⭐️⭐️⭐️</td>
+        </tr>
+        <tr>
+            <td class="filme">Sleepaway Camp</td>
+            <td>1983</td>
+            <td>⭐️⭐️⭐️⭐️⭐️⭐️</td>
+        </tr>
+        <tr>
+            <td class="filme">Birdemic: Shock and Terror</td>
+            <td>2010</td>
+            <td>⭐️</td>
+        </tr>
+        <tr>
+            <td class="filme">Manos: The Hands of Fate</td>
+            <td>1966</td>
+            <td>⭐️</td>
+        </tr>
+        <tr>
+            <td class="filme">Attack of the Killer Tomatoes</td>
+            <td>1978</td>
+            <td>⭐️⭐️⭐️⭐️</td>
+        </tr>
+        <tr>
+            <td class="filme">Miami Connection</td>
+            <td>1987</td>
+            <td>⭐️⭐️⭐️⭐️⭐️</td>
+        </tr>
+    </table>
+
+    <a href="pagina2.html">Ver Detalhes dos Filmes</a>
 </div>
 
 <footer>
-    <p>&copy; 2024 - Todos os direitos reservados.</p>
+  © 2024 Todos os direitos reservados.
 </footer>
 
 </body>
